@@ -1,7 +1,7 @@
 """The main entry point."""
 import sshtunnel
 import pymysql
-from orgindiators import OrgindicatorsNCD, OrgindicatorsHIV
+from reports.orgindiators import OrgindicatorsNCD, OrgindicatorsHIV
 
 sql_hostname = ' '
 sql_username = ' '
