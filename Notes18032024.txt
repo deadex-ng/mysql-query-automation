@@ -1,0 +1,15 @@
+Notes
+
+Epilepsy
+
+We don't have this query:
+Patients with a visit in last month with controlled seizure activity FIXED
+
+Cross Check this query, it's not returing any data:
+Patients with a visit in last month with hospitalization in the last month FIXED
+
+20032024
+
+CKD
+We don't have this query:
+Patients with a visit in last month with hospitalization in the last month

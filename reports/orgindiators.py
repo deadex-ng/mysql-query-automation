@@ -8,8 +8,8 @@ class OrgindicatorsNCD:
         self.cursor_obj = cursor_obj
 
     def ncd_rentention_one_year(self) -> None:
-        end_date = '"2021-06-30"'
-        end_reporting_date = '"2022-06-30"'
+        end_date = '"2023-03-31"'
+        end_reporting_date = '"2023-03-31"'
         query = """
         /* 2.Retention In Care For Ncds At 12 And 24 Months */
         /* Numerator - Result Should Subtract To Denominator To Get Number Of Patients In Care */
@@ -102,8 +102,8 @@ class OrgindicatorsNCD:
             )
 
     def ncd_rentention_two_years(self) -> None:
-        end_date = '"2020-06-30"'
-        end_reporting_date = '"2022-06-30"'
+        end_date = '"2022-03-31"'
+        end_reporting_date = '"2022-03-31"'
         query = """
         /* 2.Retention In Care For Ncds At 24 Months */
         /* Numerator - Result Should Subtract To Denominator To Get Number Of Patients In Care */
@@ -195,7 +195,7 @@ class OrgindicatorsNCD:
             )
 
     def ncd_active_in_care(self) -> None:
-        end_date = '"2022-07-31"'
+        end_date = '"2024-03-31"'
 
         query = """
         /* Denominaotr - # of NCD patients currently in care */
@@ -270,8 +270,8 @@ class OrgindicatorsNCD:
             )
 
     def ncd_patients_with_visit_in_last_three_months(self) -> None:
-        start_date = '"2018-01-01"'
-        end_date = '"2018-03-31"'
+        start_date = '"2024-01-01"'
+        end_date = '"2024-03-31"'
 
         query = """
         /* Numerator - Number of NCD patients with a visit in the last three months */
@@ -301,8 +301,8 @@ class OrgindicatorsNCD:
             )
 
     def ncd_mortality(self) -> None:
-        start_date = '"2022-04-01"'
-        end_date = '"2022-06-30"'
+        start_date = '"2024-01-01"'
+        end_date = '"2024-03-31"'
         query = """
         /* NCD Mortality */
         /* Numerator - Patient died */
@@ -377,7 +377,7 @@ class OrgindicatorsNCD:
             )
 
     def ncd_active_in_care_12_months_before(self) -> None:
-        end_date = '"2022-12-31"'
+        end_date = '"2023-03-31"'
 
         query = """
         /* Denominaotr - # of NCD patients currently in care */
@@ -454,7 +454,7 @@ class OrgindicatorsNCD:
             )
 
     def ncd_active_in_care_24_months_before(self) -> None:
-        end_date = '"2022-12-31"'
+        end_date = '"2022-03-31"'
 
         query = """
         /* Denominaotr - # of NCD patients currently in care */
@@ -536,7 +536,7 @@ class OrgindicatorsHIV:
         self.cursor_obj = cursor_obj
 
     def mmd_summary(self) -> None:
-        end_date = '"2022-06-30"'
+        end_date = '"2024-03-31"'
         query = """
         /* Denominaotr - # of NCD patients currently in care */
 
@@ -651,8 +651,8 @@ class OrgindicatorsHIV:
             print("----------")
 
     def hiv_mortality(self) -> None:
-        start_date = '"2022-04-01"'
-        end_date = '"2022-06-30"'
+        start_date = '"2024-01-01"'
+        end_date = '"2024-03-31"'
         query = """
         /* HIV Mortality */
         /* Numerator */
@@ -713,7 +713,7 @@ class OrgindicatorsHIV:
             )
 
     def hiv_active_in_care(self) -> None:
-        end_date = '"2021-06-30"'
+        end_date = '"2024-03-31"'
         query = """
         /* Denominator */
         /* Active in care based on end date */
@@ -775,7 +775,7 @@ class OrgindicatorsHIV:
             )
 
     def hiv_active_in_care_12_months_before(self) -> None:
-        end_date = '"2021-06-30"'
+        end_date = '"2023-03-31"'
         query = """
         /* Denominator */
         /* Active in care based on end date */
@@ -839,7 +839,7 @@ class OrgindicatorsHIV:
             )
 
     def hiv_active_in_care_24_months_before(self) -> None:
-        end_date = '"2021-06-30"'
+        end_date = '"2022-03-31"'
         query = """
         /* Denominator */
         /* Active in care based on end date */
@@ -903,8 +903,8 @@ class OrgindicatorsHIV:
             )
 
     def hiv_viral_load_suppression_numerator(self) -> None:
-        start_date = '"2022-09-30"'
-        end_date = '"2023-12-31"'
+        start_date = '"2022-12-01"'
+        end_date = '"2024-03-31"'
         query = """
         /* 4. Viral Load suppression */
         /* Numerator */
@@ -943,8 +943,8 @@ class OrgindicatorsHIV:
             )
 
     def hiv_viral_load_suppression_denominator(self) -> None:
-        start_date = '"2020-03-01"'
-        end_date = '"2021-09-30"'
+        start_date = '"2022-12-01"'
+        end_date = '"2024-03-31"'
         query = """
         /* Denominator */
         USE openmrs_warehouse;
@@ -982,8 +982,8 @@ class OrgindicatorsHIV:
             )
 
     def art_rententiona_at_12_months(self) -> None:
-        end_date = '"2021-06-30"'
-        end_reporting_date = '"2022-06-30"'
+        end_date = '"2024-03-31"'
+        end_reporting_date = '"2024-03-31"'
         query = """
         /* 3. % of ART retention at 12 month */
 
