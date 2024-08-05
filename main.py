@@ -1,7 +1,8 @@
 """The main entry point."""
 import sshtunnel
 import pymysql
-from dotenv import load_dotenv
+import os
+from dotenv import load_dotenv, dotenv_values
 from reports.orgindiators import OrgindicatorsNCD, OrgindicatorsHIV
 from reports.advancedncd import (
     CHF,
@@ -15,11 +16,12 @@ from reports.advancedncd import (
     Hypertension,
 )
 
+ssh_host = "10.100.11.43"
 try:
     with sshtunnel.SSHTunnelForwarder(
         (ssh_host, ssh_port),
-        ssh_username=ssh_user,
-        ssh_password=ssh_password,
+        ssh_username=username,
+        ssh_password=password,
         remote_bind_address=(sql_ip, sql_port),
     ) as tunnel:
         try:
@@ -27,7 +29,7 @@ try:
                 host=sql_ip,
                 user=sql_username,
                 passwd=sql_password,
-                db=sql_main_database,
+                db=sql_database,
                 port=tunnel.local_bind_port,
             )
             cursor_obj = conn.cursor()

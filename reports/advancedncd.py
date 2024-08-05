@@ -39,7 +39,8 @@ def write_data(row, data):
         else:
             if x[1] == "M":
                 value = ndh['B' + str(row)]
-                value = value._value
+                print("VALUE: ", value)
+                # value = value._value
                 if isinstance(value, int):
                     value = value + x[2]
                     ndh["B" + str(row)] = value

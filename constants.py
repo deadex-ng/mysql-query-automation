@@ -1,24 +1,24 @@
-# FACILITIES = [
-#     "Neno District Hospital",
-#     "Ligowe HC",
-#     "Dambe Clinic ",
-#     "Matandani Rural Health Center",
-#     "Magaleta HC",
-#     "Luwani RHC",
-#     "Nsambe HC",
-#     "Neno Mission HC",
-# ]
 FACILITIES = [
-    "Zalewa HC",
-    "Matope HC",
-    "Midzemba HC",
-    "Nkhula Falls RHC",
-    "Lisungwi Community hospital",
-    "Chifunga HC",
+    "Neno District Hospital",
+    "Ligowe HC",
+    "Dambe Clinic ",
+    "Matandani Rural Health Center",
+    "Magaleta HC",
+    "Luwani RHC",
+    "Nsambe HC",
+    "Neno Mission HC",
 ]
-dates = ['"2024-04-30"']
+# FACILITIES = [
+#     "Zalewa HC",
+#     "Matope HC",
+#     "Midzemba HC",
+#     "Nkhula Falls RHC",
+#     "Lisungwi Community hospital",
+#     "Chifunga HC",
+# ]
+dates = ['"2024-07-31"']
 
-start = ['"2024-04-01"']
+start = ['"2024-07-01"']
 
 # '"2023-01-31"',
 # '"2023-02-28"',
